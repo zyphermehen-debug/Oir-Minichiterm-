@@ -1,0 +1,5 @@
+{
+  "name": "Oir Minichiterm",
+  "description": "Vrhunski HVAC sistemi, ventilacija, klimatizacija i podno grejanje u Beogradu. Zvanični partner za Multibeton, Siemens i Johnson Controls.",
+  "requestFramePermissions": ["geolocation"]
+}

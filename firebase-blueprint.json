@@ -1,0 +1,22 @@
+{
+  "entities": {
+    "Lead": {
+      "title": "Lead",
+      "description": "A potential customer lead from the survey",
+      "type": "object",
+      "properties": {
+        "type": { "type": "string", "description": "Property type (Residential, Commercial, etc.)" },
+        "size": { "type": "string", "description": "Square footage range" },
+        "service": { "type": "string", "description": "Desired service" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "When the lead was submitted" }
+      },
+      "required": ["type", "size", "service", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/leads/{leadId}": {
+      "schema": "Lead",
+      "description": "Collection of customer leads"
+    }
+  }
+}
